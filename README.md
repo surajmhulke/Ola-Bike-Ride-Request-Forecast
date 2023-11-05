@@ -78,7 +78,8 @@ df_train['drop_time'] = df_train['drop_time'].str.split(' ').str[0].str.split('/
 We calculate the journey time in minutes, which is an important factor for pricing, by taking the difference between drop time and pickup time.
 
  
-
+python
+```
   Training dataset
 df_train['pickup_time'] = pd.to_datetime(df_train['pickup_time'], format='%Y%d%m%H%M%S')
 df_train['drop_time'] = pd.to_datetime(df_train['drop_time'], format='%Y%d%m%H%M%S')
@@ -88,7 +89,7 @@ df_train['Journey_Time_in_Mins'] = (df_train['drop_time'] - df_train['pickup_tim
 df_test['pickup_time'] = pd.to_datetime(df_test['pickup_time'], format='%Y%d%m%H%M%S')
 df_test['drop_time'] = pd.to_datetime(df_test['drop_time'], format='%Y%d%m%H%M%S')
 df_test['Journey_Time_in_Mins'] = (df_test['drop_time'] - df_test['pickup_time']) / pd.Timedelta(minutes=1)
-
+```
 ## Type Casting
 
 We convert string columns to their appropriate numeric data types to prepare the data for model training.
