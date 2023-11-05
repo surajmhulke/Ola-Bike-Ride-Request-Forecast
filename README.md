@@ -25,8 +25,8 @@ In this project, we will predict ride requests for Ola Bike rides. Understanding
 ## Importing Libraries
 
 We import necessary Python libraries to assist in data handling, analysis, and model development.
-
-``` 
+ 
+ ```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
