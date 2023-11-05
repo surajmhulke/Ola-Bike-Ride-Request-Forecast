@@ -26,7 +26,7 @@ In this project, we will predict ride requests for Ola Bike rides. Understanding
 
 We import necessary Python libraries to assist in data handling, analysis, and model development.
 
- 
+``` 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -39,7 +39,7 @@ from sklearn.linear_model import TweedieRegressor
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.model_selection import train_test_split
 from xgboost import XGBRegressor
-
+```
 ## Importing Dataset
 
 We load historical ride data from CSV files, which will be used for training and testing machine learning models.
